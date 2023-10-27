@@ -1,0 +1,9 @@
+.grid-input {
+    width: 20px; /* Cambia el ancho */
+    height: 20px; /* Cambia la altura */
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+    border: 1px solid black;
+    font-size: 16px;
+}
