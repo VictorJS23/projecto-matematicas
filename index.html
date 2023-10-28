@@ -10,12 +10,62 @@
 
 <body>
 
-    <div id="main-content">
-
+    
+    <div class="fondo">
+        <h1></h1>
+        <div id="main-content">
+        
+        </div>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="boton" onclick="insert('7')">7</button></td>
+                    <td><button class="boton" onclick="insert('8')">8</button></td>
+                    <td><button class="boton" onclick="insert('9')">9</button></td>
+                    <td><button class="boton" onclick="insert('')"><i class="fa-solid fa-square-root-variable"></i></button></td>
+                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="insert('')">Matriz</button></td>
+                    <td><button class="boton" style="font-size: 20px;" onclick="insert('')">Modo</button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton" onclick="insert('4')">4</button></td>
+                    <td><button class="boton" onclick="insert('5')">5</button></td>
+                    <td><button class="boton" onclick="insert('6')">6</button></td>
+                    <td><button class="boton" onclick="insert('*')">X</button></td>
+                    <td><button class="boton" onclick="insert('/')">/</button></td>     
+                    <td><button class="boton" onclick="insert('')">(</button></td>
+                    <td><button class="boton" onclick="insert('')">)</button></td>
+                    <td><button class="boton" onclick="insert('')"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton" onclick="insert('1')">1</button></td>
+                    <td><button class="boton" onclick="insert('2')">2</button></td>
+                    <td><button class="boton" onclick="insert('3')">3</button></td>
+                    <td><button class="boton" onclick="insert('+')">+</button></td>
+                    <td><button class="boton" onclick="insert('-')">-</button></td>
+                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td><button class="boton" onclick="insert('')"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton" onclick="insert('.')">.</button></td>
+                    <td><button class="boton" onclick="insert('0')">0</button></td>
+                    <td><button class="boton" onclick="insert('')">Ans</button></td>
+                    <td><button class="boton" onclick="back()">DEL</button></td>
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="calcular()">=</button></td>
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="clean()">C</button></td>
+                </tr>
+            </table>
+        </div>
     </div>
-
+    
+    
+    
     <script src="./scripts/victor.js"></script>
     <script src="./scripts/brandon.js"></script>
+    <script src="./scripts/oscar.js"></script>
 </body>
 
 </html>
