@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
+    <style>
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 40px);
+            /* Definimos una cuadrícula de 5x5 celdas iniciales */
+            grid-template-rows: repeat(5, 40px);
+            gap: 2px;
+            /* Espacio entre celdas */
+        }
+
+        .grid-cell {
+            width: 40px;
+            height: 40px;
+            background-color: lightgray;
+            border: 1px solid gray;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleIndex.css">
@@ -60,9 +78,18 @@
             </table>
         </div>
     </div>
-    
-    
-    
+
+    <h1>Suma de Matrices con Cuadrícula Ajustable</h1>
+
+    <label for="grid-size">Tamaño de la Cuadrícula: <span id="grid-size-label">5x5</span></label>
+    <input type="range" id="grid-size" min="2" max="10" step="1" value="5">
+
+    <div id="grid-container"></div>
+
+    <button id="generateInputs">Generar Inputs</button>
+
+    <div id="input-container"></div>
+
     <script src="./scripts/victor.js"></script>
     <script src="./scripts/brandon.js"></script>
     <script src="./scripts/oscar.js"></script>
