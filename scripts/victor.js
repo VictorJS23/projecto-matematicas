@@ -84,7 +84,8 @@ function toggleMatrizMenu() {
 
 function agregarMatriz() {
   // Lógica para agregar una matriz
-  alert("se esta agregando una matriz")
+  const result = document.getElementById('resultado')
+  result.innerHTML = 'xd'
 }
 
 function operarMatrices() {
