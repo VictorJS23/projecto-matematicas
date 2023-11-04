@@ -24,17 +24,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleIndex.css">
     <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
-    
+
     <title>Projecto Matematicas</title>
 </head>
 
 <body>
 
-    
+
     <div class="fondo">
         <h1></h1>
         <div id="main-content">
-        
+
         </div>
         <div class="calculadora">
             <h1>Calculadora</h1>
@@ -44,9 +44,23 @@
                     <td><button class="boton" onclick="insert('7')">7</button></td>
                     <td><button class="boton" onclick="insert('8')">8</button></td>
                     <td><button class="boton" onclick="insert('9')">9</button></td>
-                    <td><button class="boton" onclick="insert('')"><i class="fa-solid fa-square-root-variable"></i></button></td>
+                    <td><button class="boton" onclick="insert('')"><i
+                                class="fa-solid fa-square-root-variable"></i></button></td>
                     <td><button class="boton" onclick="insert('')"></button></td>
-                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="insert('')">Matriz</button></td>
+
+                    <!-- <td colspan="2"><button class="boton" style="width: 106px;" onclick="insert('')"
+                            id="btnMatriz">Matriz</button></td>
+                    <td colspan="2"> -->
+
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="toggleMatrizMenu()"
+                            id="btnMatriz">Matrizx</button></td>
+
+                    <div id="matrizMenu" class="menu">
+                        <button onclick="agregarMatriz()">Agregar Matriz</button>
+                        <button onclick="operarMatrices()">Operar Matrices</button>
+                        <button onclick="eliminarMatrices()">Eliminar Matrices</button>
+                    </div>
+
                     <td><button class="boton" style="font-size: 20px;" onclick="insert('')">Modo</button></td>
                 </tr>
                 <tr>
@@ -54,7 +68,7 @@
                     <td><button class="boton" onclick="insert('5')">5</button></td>
                     <td><button class="boton" onclick="insert('6')">6</button></td>
                     <td><button class="boton" onclick="insert('*')">X</button></td>
-                    <td><button class="boton" onclick="insert('/')">/</button></td>     
+                    <td><button class="boton" onclick="insert('/')">/</button></td>
                     <td><button class="boton" onclick="insert('')">(</button></td>
                     <td><button class="boton" onclick="insert('')">)</button></td>
                     <td><button class="boton" onclick="insert('')"></button></td>
@@ -91,6 +105,14 @@
     <button id="generateInputs">Generar Inputs</button>
 
     <div id="input-container"></div>
+
+    <!-- <button id="botonDesplegar">Desplegar Menú</button> -->
+    <!-- <div id="menuDesplegable" class="menu">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+    </div> -->
+
 
     <script src="./scripts/victor.js"></script>
     <script src="./scripts/brandon.js"></script>

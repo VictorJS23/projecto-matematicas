@@ -70,3 +70,38 @@
 
         // Inicialmente crea la cuadrícula con el tamaño predeterminado
         createGrid(gridSizeInput.value);
+
+// ---->> Manipulando la calculadora
+
+function toggleMatrizMenu() {
+  const matrizMenu = document.getElementById('matrizMenu');
+  if (matrizMenu.style.display === 'none' || matrizMenu.style.display === '') {
+    matrizMenu.style.display = 'block';
+  } else {
+    matrizMenu.style.display = 'none';
+  }
+}
+
+function agregarMatriz() {
+  // Lógica para agregar una matriz
+  alert("se esta agregando una matriz")
+}
+
+function operarMatrices() {
+  // Lógica para operar matrices
+  alert("se esta operando una matriz")
+}
+
+function eliminarMatrices() {
+  // Lógica para eliminar matrices
+  alert("se esta eliminando una matriz")
+}
+
+// document.getElementById('botonDesplegar').addEventListener('click', function() {
+//   var menu = document.getElementById('menuDesplegable');
+//   if (menu.style.display === 'none' || menu.style.display === '') {
+//     menu.style.display = 'block';
+//   } else {
+//     menu.style.display = 'none';
+//   }
+// });
