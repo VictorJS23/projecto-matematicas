@@ -105,7 +105,14 @@
                     </ul>
 
 
-                    <td><button class="boton" style="font-size: 20px;" onclick="insert('')">Modo</button></td>
+                    <td><button id="btnModo" class="boton" style="font-size: 20px;"
+                            onclick="toggleMatrizMenu2()">Modo</button>
+                    </td>
+
+                    <div id="matrizMenu2" class="menu">
+                        <button onclick="inverza()">Inverza</button>
+                    </div>
+
                 </tr>
                 <tr>
                     <td><button class="boton" onclick="insert('4')">4</button></td>
