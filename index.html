@@ -52,12 +52,12 @@
                             id="btnMatriz">Matriz</button></td>
                     <td colspan="2"> -->
 
-                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="toggleMatrizMenu()"
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="mostrarMatrizInput()"
                             id="btnMatriz">Matrizx</button></td>
 
-                    <div id="matrizMenu" class="menu">
+                    <!-- <div id="matrizMenu" class="menu">
                         <button onclick="mostrarMatrizInput()">Agregar Matriz</button>
-                    </div>
+                    </div> -->
 
                     <div id="matrizInput" style="display: none;">
                         <label for="numFilas">Número de filas:</label>
@@ -73,9 +73,16 @@
                             onclick="toggleMatrizMenu2()">Modo</button>
                     </td>
 
-                    <div id="matrizMenu2" class="menu">
-                        <button onclick="inverza()">Inverza</button>
+                    <div id="matrizMenu2" class="menuOpciones">
+                        <select id="selectOptions">
+                            <option hidden>Elija una opcion</option>
+                            <option>inversa</option>
+                            <option>determinante</option>
+                            <option>transpuesta</option>
+                        </select>
                     </div>
+
+                    <!-- <button onclick="inverza()">Inverza</button>
 
                     <div id="matrizMenu2" class="menu">
                         <button onclick="determinante()">determinante</button>
@@ -87,7 +94,7 @@
 
                     <div id="matrizMenu2" class="menu">
                         <button onclick="cofactores()">cofactores</button>
-                    </div>
+                    </div> -->
 
                 </tr>
                 <tr>
