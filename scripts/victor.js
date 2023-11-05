@@ -83,5 +83,17 @@ function toggleMatrizMenu2() {
 }
 
 function inverza() {
-    alert('xd')
+    alert('inverza')
+}
+
+function determinante() {
+    alert('determinante')
+}
+
+function transpuesta() {
+    alert('transpuesta')
+}
+
+function cofactores() {
+    alert('cofactores')
 }

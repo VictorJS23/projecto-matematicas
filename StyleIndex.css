@@ -62,7 +62,6 @@ td, tr{
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  padding-left: 50px;
 
 }
 
@@ -71,13 +70,11 @@ td, tr{
   padding: 10px;
   text-decoration: none;
   color: #333;
-    padding-left: 50px;
 
 }
 
 .menu a:hover {
   background-color: #ccc;
-    padding-left: 50px;
 
 }
 
@@ -88,7 +85,6 @@ td, tr{
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 5px;
-  padding-left: 50px;
 }
 
 .menu button {
@@ -118,7 +114,6 @@ td, tr{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-left: 50px;
 }
 
 .menu button {
@@ -129,12 +124,9 @@ td, tr{
   font-size: 16px;
   padding: 5px;
   cursor: pointer;
-  padding-left: 50px;
 }
 
 .menu button:hover {
   background-color: #eee;
-    padding-left: 50px;
-
 }
 
