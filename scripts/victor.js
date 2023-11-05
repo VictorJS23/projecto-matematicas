@@ -73,30 +73,30 @@
 
 // ---->> Manipulando la calculadora
 
-function toggleMatrizMenu() {
-  const matrizMenu = document.getElementById('matrizMenu');
-  if (matrizMenu.style.display === 'none' || matrizMenu.style.display === '') {
-    matrizMenu.style.display = 'block';
-  } else {
-    matrizMenu.style.display = 'none';
-  }
-}
+// function toggleMatrizMenu() {
+//   const matrizMenu = document.getElementById('matrizMenu');
+//   if (matrizMenu.style.display === 'none' || matrizMenu.style.display === '') {
+//     matrizMenu.style.display = 'block';
+//   } else {
+//     matrizMenu.style.display = 'none';
+//   }
+// }
 
-function agregarMatriz() {
-  // Lógica para agregar una matriz
-  const result = document.getElementById('resultado')
-  result.innerHTML = 'xd'
-}
+// function agregarMatriz() {
+//   // Lógica para agregar una matriz
+//   const result = document.getElementById('resultado')
+//   result.innerHTML = 'xd'
+// }
 
-function operarMatrices() {
-  // Lógica para operar matrices
-  alert("se esta operando una matriz")
-}
+// function operarMatrices() {
+//   // Lógica para operar matrices
+//   alert("se esta operando una matriz")
+// }
 
-function eliminarMatrices() {
-  // Lógica para eliminar matrices
-  alert("se esta eliminando una matriz")
-}
+// function eliminarMatrices() {
+//   // Lógica para eliminar matrices
+//   alert("se esta eliminando una matriz")
+// }
 
 // document.getElementById('botonDesplegar').addEventListener('click', function() {
 //   var menu = document.getElementById('menuDesplegable');
