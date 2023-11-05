@@ -56,8 +56,19 @@
                             id="btnMatriz">Matrizx</button></td>
 
                     <div id="matrizMenu" class="menu">
-                        <button onclick="agregarMatriz()">Agregar Matriz</button>
+                        <button onclick="mostrarMatrizInput()">Agregar Matriz</button>
                     </div>
+
+                    <div id="matrizInput" style="display: none;">
+                        <label for="numFilas">Número de filas:</label>
+                        <input type="number" id="numFilas" min="1" max="10">
+                        
+                        <label for="numColumnas">Número de columnas:</label>
+                        <input type="number" id="numColumnas" min="1" max="10">
+                        
+                        <button onclick="agregarMatriz()">Confirmar Matriz</button>
+                    </div>
+
 
                     <ul class="menu">
                         <li><a href="#">Menú 1</a>
