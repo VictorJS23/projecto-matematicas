@@ -43,6 +43,8 @@
 }
 #resultado{
     background-color: white;
+    max-width: 495px;
+    max-height: 495px;
     width: 495px;
     height: 220px;
     margin: 5px;
