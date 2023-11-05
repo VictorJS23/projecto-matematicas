@@ -21,6 +21,6 @@ function calcular()
     }
     else
     {
-        document.getElementById('resultado').innerHTML = "puto el que lo lea..."
+        document.getElementById('resultado').innerHTML = "";
     }
 }
