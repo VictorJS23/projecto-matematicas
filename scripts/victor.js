@@ -94,14 +94,46 @@ selectElement.addEventListener("change", function() {
     alert(selectedOption);
 });
 
+const matriz = [
+    [1, 2, -2],
+    [-2, -1, 2],
+    [2, -2, 1]
+]
+
 
 function inverza() {
     alert('inverza')
 }
 
-function determinante() {
-    alert('determinante')
+function determinante(matrix) {
+  // Verificar si la matriz es cuadrada
+  if (matrix.length !== matrix[0].length) {
+    throw new Error('La matriz no es cuadrada, por lo que no se puede calcular el determinante.');
+  }
+
+  // Caso base: matriz 2x2
+  if (matrix.length === 2) {
+    return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+  }
+
+  let det = 0;
+
+  for (let i = 0; i < matrix.length; i++) {
+    // Calcular el cofactor
+    const cofactor = matrix[0][i] * determinante(getSubmatrix(matrix, i));
+    // Sumar o restar el cofactor al determinante según el índice de la columna
+    det += (i % 2 === 0 ? 1 : -1) * cofactor;
+  }
+
+  return det;
 }
+
+function getSubmatrix(matrix, colIndex) {
+  return matrix.slice(1).map(row => row.filter((_, i) => i !== colIndex));
+}
+
+const response = determinante(matriz)
+console.log(response)
 
 function transpuesta() {
     alert('transpuesta')
@@ -110,3 +142,4 @@ function transpuesta() {
 function cofactores() {
     alert('cofactores')
 }
+
