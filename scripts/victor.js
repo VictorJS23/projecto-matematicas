@@ -82,6 +82,19 @@ function toggleMatrizMenu2() {
   }
 }
 
+// Obtén el elemento <select> por su ID
+const selectElement = document.getElementById("selectOptions");
+
+// Agrega un event listener para el cambio de selección
+selectElement.addEventListener("change", function() {
+    // Obtiene el valor de la opción seleccionada
+    const selectedOption = selectElement.options[selectElement.selectedIndex].textContent;
+
+    // Muestra una alerta con el valor seleccionado
+    alert(selectedOption);
+});
+
+
 function inverza() {
     alert('inverza')
 }

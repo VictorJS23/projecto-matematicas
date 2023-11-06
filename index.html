@@ -50,18 +50,18 @@
                     <td><button class="boton" onclick="insert('9')">9</button></td>
                     <td><button class="boton" onclick="insert('')"><i
                                 class="fa-solid fa-square-root-variable"></i></button></td>
-                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td><button class="boton" onclick="insert('')"><img src="./img/2.png"></button></td>
 
                     <!-- <td colspan="2"><button class="boton" style="width: 106px;" onclick="insert('')"
                             id="btnMatriz">Matriz</button></td>
                     <td colspan="2"> -->
 
-                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="toggleMatrizMenu()"
+                    <td colspan="2"><button class="boton" style="width: 106px;" onclick="mostrarMatrizInput()"
                             id="btnMatriz">Matrizx</button></td>
 
-                    <div id="matrizMenu" class="menu">
+                    <!-- <div id="matrizMenu" class="menu">
                         <button onclick="mostrarMatrizInput()">Agregar Matriz</button>
-                    </div>
+                    </div> -->
 
                     <div id="matrizInput" style="display: none;">
                         <label for="numFilas">Número de filas:</label>
@@ -75,23 +75,30 @@
 
                     <td><button id="btnModo" class="boton" style="font-size: 20px;"
                             onclick="toggleMatrizMenu2()">Modo</button>
-                            
-                            <div id="matrizMenu2" class="menu">
-                                <button onclick="inverza()">Inverza</button>
-                            </div>
-                            
-                            <div id="matrizMenu2" class="menu">
-                                <button onclick="determinante()">determinante</button>
-                            </div>
-                            
-                            <div id="matrizMenu2" class="menu">
-                                <button onclick="transpuesta()">transpuesta</button>
-                            </div>
-                            
-                            <div id="matrizMenu2" class="menu">
-                                <button onclick="cofactores()">cofactores</button>
-                            </div>
-                        </td>
+                    </td>
+
+                    <div id="matrizMenu2" class="menuOpciones">
+                        <select id="selectOptions">
+                            <option hidden>Elija una opcion</option>
+                            <option>inversa</option>
+                            <option>determinante</option>
+                            <option>transpuesta</option>
+                        </select>
+                    </div>
+
+                    <!-- <button onclick="inverza()">Inverza</button>
+
+                    <div id="matrizMenu2" class="menu">
+                        <button onclick="determinante()">determinante</button>
+                    </div>
+
+                    <div id="matrizMenu2" class="menu">
+                        <button onclick="transpuesta()">transpuesta</button>
+                    </div>
+
+                    <div id="matrizMenu2" class="menu">
+                        <button onclick="cofactores()">cofactores</button>
+                    </div> -->
 
                 </tr>
                 <tr>
@@ -102,7 +109,7 @@
                     <td><button class="boton" onclick="insert('/')">/</button></td>
                     <td><button class="boton" onclick="insert('')">(</button></td>
                     <td><button class="boton" onclick="insert('')">)</button></td>
-                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td><button class="boton" onclick="insert('')"><img src="./img/3.png"></button></td>
                 </tr>
                 <tr>
                     <td><button class="boton" onclick="insert('1')">1</button></td>
@@ -110,9 +117,9 @@
                     <td><button class="boton" onclick="insert('3')">3</button></td>
                     <td><button class="boton" onclick="insert('+')">+</button></td>
                     <td><button class="boton" onclick="insert('-')">-</button></td>
-                    <td><button class="boton" onclick="insert('')"></button></td>
-                    <td><button class="boton" onclick="insert('')"></button></td>
-                    <td><button class="boton" onclick="insert('')"></button></td>
+                    <td><button class="boton" onclick="insert('')"><img src="./img/1.png"></button></td>
+                    <td><button class="boton" onclick="insert('')"><img src="./img/4.png"></button></td>
+                    <td><button class="boton" onclick="insert('')"><img src="./img/5.png"></button></td>
                 </tr>
                 <tr>
                     <td><button class="boton" onclick="insert('.')">.</button></td>
