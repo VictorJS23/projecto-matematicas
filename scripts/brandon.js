@@ -38,7 +38,7 @@ function agregarMatriz() {
   }
 
   // Convierte la matriz en una cadena formateada
-  const matrizFormateada = matriz.map(fila => fila.join('\t')).join('\n');
+  const matrizFormateada = matriz.map((fila) => `[ ${fila.join(' ')} ]`).join(` \n `);
 
   // Muestra la matriz en la pantalla de la calculadora
   const resultado = document.getElementById('resultado');
